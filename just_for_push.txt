@@ -1,0 +1,10 @@
+public static int searchNumbers(int[] arr, int number) {
+        if (arr == null) return -3;
+        if (arr.length < 8) return -1;
+        if (arr.length > 99) return -4;
+        for (int i = 0; i < arr.length; i++)
+            if (arr[i] == number) return i;
+
+        return -2;
+
+    }
